@@ -3,8 +3,8 @@
     <svg viewBox="0 0 230 150">
         <text font-size="50" class="logo__main">
           <tspan textLength="220" x="0" y="1em">ASHLEY</tspan>
-          <tspan textLength="250" x="0" dy="1em">
-            <tspan>HEBLER</tspan>
+          <tspan textLength="200" x="0" dy="1em">
+            <tspan textLength="215">HEBLER</tspan>
             <tspan class="logo__sub" x="215">,</tspan>
             <tspan style="writing-mode: tb;" x="223" y="4em" font-size="15">INC</tspan>
           </tspan>
