@@ -1,6 +1,6 @@
 # portfolio
 
-> Nuxt.js project
+> Ashley Hebler portfolio
 
 ## Build Setup
 
