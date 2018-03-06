@@ -6,7 +6,7 @@
           <tspan textLength="200" x="0" dy="1em">
             <tspan textLength="215">HEBLER</tspan>
             <tspan class="logo__sub" x="215">,</tspan>
-            <tspan style="writing-mode: tb;" x="223" y="4em" font-size="15">INC</tspan>
+            <tspan style="writing-mode: tb;" x="223" y="4.6em" font-size="13">INC</tspan>
           </tspan>
         </text>
         <text font-size="30" class="logo__sub">
@@ -28,8 +28,7 @@
     fill: #fff;
   }
   .logo__sub {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-weight: 300;
     fill: #fff;
   }
 </style>
