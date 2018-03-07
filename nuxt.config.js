@@ -65,6 +65,9 @@ module.exports = {
     '~plugins/vue-clipboard2',
     { src: '~/plugins/vue-analytics', ssr: false }
   ],
+  modules: [
+      '@nuxtjs/pwa',
+  ],
   generate: {
     fallback: true
   }
