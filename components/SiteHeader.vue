@@ -59,7 +59,7 @@
 		}
 	}
 	&__end {
-		font-family: $accent-font;
+		@include fontDefer();
 		.header--home & {
 			color: $secondary-color;
 		}

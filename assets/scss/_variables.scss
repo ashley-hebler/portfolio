@@ -4,7 +4,16 @@ $secondary-color: #3a3833; // red
 $body-color: #333;
 $gray: #fafafa;
 $main-font: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$accent-font: 'Merriweather', 'Georgia', serif;
+$accent-font: 'Georgia', serif;
+$accent-font-loaded: 'Merriweather', 'Georgia', serif;
+// Font mixin
+@mixin fontDefer() {
+	font-family: $accent-font;
+	font-weight: normal;
+	html.fonts-loaded & {
+		font-family: $accent-font-loaded;
+	}
+}
 $max-width: 1200px;
 $nav-size: 25em;
 

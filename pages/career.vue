@@ -225,7 +225,7 @@ export default {
 		display: block;
 	}
 	&__section-header {
-		font-family: $accent-font;
+		@include fontDefer();
 		font-size: 1.5em;
 		line-height: 1.4;
 	}

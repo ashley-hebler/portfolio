@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
+<html lang="en" class="fonts-loaded" {{ HTML_ATTRS }}>
+<!--#else -->
+<html lang="en" {{ HTML_ATTRS }}>
+<!--#endif -->
+
+<head>
+	{{ HEAD }}
+</head>
+
+<body {{ BODY_ATTRS }}>
+	{{ APP }}
+</body>
+
+</html>

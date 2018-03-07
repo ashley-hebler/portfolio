@@ -1,3 +1,4 @@
+@import "fonts";
 @import "normalize";
 @import "variables";
 @import "mixins";
@@ -206,10 +207,9 @@
 			flex-direction: column;
 			justify-content: center;
 		}
-		&__subtitle {
+		&__subtitle,
 		&--alt {
-			font-family: $accent-font;
-		}
+			@include fontDefer();
 		}
 		&__tool-tip {
 			position: absolute;

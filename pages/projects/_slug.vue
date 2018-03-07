@@ -188,7 +188,7 @@ export default {
 		}
 		&--sm {
 			font-size: 1em;
-			font-family: $accent-font;
+			@include fontDefer();
 		}
 	}
 	&__desc {

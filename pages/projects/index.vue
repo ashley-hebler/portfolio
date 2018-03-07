@@ -42,7 +42,7 @@ export default {
 		margin-bottom: 1em;
 	}
 	&__section-header {
-		font-family: $accent-font;
+		@include fontDefer();
 		span {
 			// background-image: url('~assets/svg/underline.svg');
 			display: inline-block;

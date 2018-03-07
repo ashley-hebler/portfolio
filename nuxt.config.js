@@ -11,8 +11,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Ashley Hebler portfolio' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Merriweather|Bowlby+One' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
   /*
@@ -31,6 +30,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['fontfaceobserver'],
     extend (config, ctx) {
       // get and remove file loader
       const rule = config.module.rules.find(r => r.test.toString() === '/\\.(png|jpe?g|gif|svg)$/')
@@ -63,7 +63,8 @@ module.exports = {
   },
   plugins: [
     '~plugins/vue-clipboard2',
-    { src: '~/plugins/vue-analytics', ssr: false }
+    { src: '~/plugins/vue-analytics', ssr: false },
+    { src: '~/plugins/fontfaceobserver', ssr: false }
   ],
   generate: {
     fallback: true
