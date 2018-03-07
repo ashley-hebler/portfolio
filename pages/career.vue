@@ -7,7 +7,7 @@
 					<div class="career__text">
 						<h3 class="career__section-header">You're probably wondering <br>how I ended up here...</h3>
 						<p class="career__section-subheading">
-							The following is the same information you'll find in my resumè, but broken down to give you a sense of what I gained from each role.
+							The following is the same information you'll find in my resume, but broken down to give you a sense of what I gained from each role.
 						</p>
 					</div>
 				</div>
