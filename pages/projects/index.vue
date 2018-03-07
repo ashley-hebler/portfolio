@@ -75,6 +75,7 @@ export default {
 		background-position: center center;
 		background-size: cover;
 		margin: 0 auto;
+		background-color: $secondary-color;
 		// border: $border-base/2 solid $primary-color;
 		box-shadow: inset 0 0 0 $border-base rgba(#fff, .5),  3px 3px 10px rgba($secondary-color, .3);
 	}
