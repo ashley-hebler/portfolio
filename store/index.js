@@ -32,7 +32,7 @@ export const state = () => ({
 					icon: 'share'
 				}
 			],
-			main: 'berare.png',
+			main: 'berare.jpg',
 			label: 'br',
 			desc: 'This project opened my eyes to the wonderful world of canvas. The photo tool was designed as social media campaign and canvas allowed me to save an image with dynamic text and backgrounds.',
 			specs: 'The site was powered by <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>, a Vue SSR Framework. I used Firebase to store the data and used Heroku to deploy my Nuxt/node.js instance.',
@@ -51,7 +51,7 @@ export const state = () => ({
 					icon: 'bitbucket'
 				}
 			],
-			main: 'medicaremall.png',
+			main: 'medicaremall.jpg',
 			label: 'mm',
 			desc: 'This site runs on WordPress and it was my first deep dive into building a theme from scratch; (although, I did use <a href="https://underscores.me/" target="_blank">_underscores</a> as a skeleton). This was built around two years ago at the time of writing.',
 			specs: 'The site was powered by <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>, a Vue SSR Framework. I used Firebase to store the data and used Heroku to deploy my Nuxt/node.js instance.',
@@ -66,7 +66,7 @@ export const state = () => ({
 					icon: 'heroku'
 				}
 			],
-			main: 'faves.png',
+			main: 'faves.jpg',
 			label: 'fv',
 			desc: 'This project was designed to aggregate our top performers for Fans 1st Media sites. I needed a way to server-side render content (for SEO) pulled in from a custom build WordPress endpoint so I went with <a href="https://nuxtjs.org/">Nuxt</a> and deployed the Node.js environment using Heroku.',
 			specs: 'The site was powered by <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>, a Vue SSR Framework. I used Firebase to store the data and used Heroku to deploy my Nuxt/node.js instance.',
@@ -100,7 +100,7 @@ export const state = () => ({
 					icon: 'file'
 				}
 			],
-			main: 'webdesign.png',
+			main: 'webdesign.jpg',
 			label: 'wd',
 			desc: 'Last spring, I taught a Wed Design course and used this site to guide lessons and projects each class period. <a href="https://kind-beaver-78f31b.netlify.com/handouts/intro-to-html" target="_blank">Using markdown to build each lesson</a> allowed me to quickly document and allow printable versions of each topic.',
 			specs: 'The site was powered by <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>, a Vue SSR Framework. I used Firebase to store the data and used Heroku to deploy my Nuxt/node.js instance.',

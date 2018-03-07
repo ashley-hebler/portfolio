@@ -44,7 +44,7 @@
 	box-shadow: inset 0 0 0 $border-base rgba(#fff, .5);
 	position: relative;
 	&--image {
-		background-image: url('~/assets/ashley-hebler.png');
+		background-image: url('~/assets/img/ashley-hebler.jpg');
 	}
 	.icon {
 		position: absolute;
