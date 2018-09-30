@@ -1,8 +1,8 @@
 <template>
 	<div class="career">
-		<section class="career__section career__section--filled">
+		<section class="career__banner">
 			<div class="max-container">
-				<div class="career__section-col">
+				<div class="career__section career__section--split">
 					<img src="~assets/img/roo.jpg" alt="Cat looks at camera" class="career__img">
 					<div class="career__text">
 						<h3 class="career__section-header">You're probably wondering <br>how I ended up here...</h3>
@@ -68,6 +68,8 @@ import trello from './../assets/svg/trello.svg'
 import heroku from './../assets/svg/heroku.svg'
 import googleanalytics from './../assets/svg/googleanalytics.svg'
 import php from './../assets/svg/php.svg'
+import react from './../assets/svg/react.svg'
+import gulp from './../assets/svg/gulp.svg'
 import ToolTip from '~/components/ToolTip.vue'
 export default {
 	components: {
@@ -77,72 +79,6 @@ export default {
 		return {
 			jobs: [
 				{
-					name: 'MedicareMall.com',
-					role: 'Web Designer/Dev',
-					tags: [
-						{
-							name: 'HTML',
-							icon: 'html5',
-						},
-						{
-							name: 'CSS',
-							icon: 'css',
-						},
-						{
-							name: 'JavaScript',
-							icon: 'javascript',
-						},
-						{
-							name: 'WordPress',
-							icon: 'wordpress',
-						},
-						{
-							name: 'Photoshop',
-							icon: 'adobephotoshop',
-						}
-					],
-					bg: 'I started as a video editor and ended up learning <span>HTML</span>, <span>CSS</span>, <span>WordPress</span> and began to fiddle with <span>JS/jQuery</span>.',
-					work: 'At the time of writing this, you can still see the template I built for the good folks at this company at <a href="https://www.medicaremall.com/">MedicareMall.com</a>.',
-					plug: 'If ever you’re on the hunt for a Medicare plan, this is the place to go. My parents even recently found plans through MedicareMall.'
-				},
-				{
-					name: 'Volusion',
-					role: 'Front-End Developer',
-					tags: [
-						{
-							name: 'HTML',
-							icon: 'html5',
-						},
-						{
-							name: 'CSS',
-							icon: 'css',
-						},
-						{
-							name: 'JavaScript',
-							icon: 'javascript',
-						},
-						{
-							name: 'WordPress',
-							icon: 'wordpress',
-						},
-						{
-							name: 'Photoshop',
-							icon: 'adobephotoshop',
-						},
-						{
-							name: 'Illustrator',
-							icon: 'adobeillustrator'
-						},
-						{
-							name: 'GitHub',
-							icon: 'github'
-						}
-					],
-					bg: 'Volusion is a SASS <strong>e-commerce</strong> platform and Creative Services where I worked was a high volume, fast production agency-type environment. We built custom designed templates and premium themes for Volusion customers using <strong>HTML/CSS/JS.</strong> I worked on a team of 12-15 devs and where we used tools like <strong>Yeoman</strong> and <strong>Grunt/Gulp</strong> to speed up repetitive workflows.',
-					work: 'I worked on countless templates for Volusion Creative Services clients, but I unfortunately did not keep track of those. I did write a blog article about SVGs while I was there. Read that article <a href="https://www.volusion.com/blog/svgs/" target="_blank">here</a>. P.S. Looks like some images are broken :(.',
-					plug: 'Working at Volusion on a team developers was one of the best moves of my career. If you are shopping around for an e-commerce platform, keep in mind that there are some brilliant and talented people working for Volusion.'
-				},
-				{
 					name: 'Cox Media Group',
 					role: 'Web Development Manager',
 					tags: [
@@ -151,7 +87,7 @@ export default {
 							icon: 'html5',
 						},
 						{
-							name: 'CSS',
+							name: 'CSS/SCSS',
 							icon: 'css',
 						},
 						{
@@ -173,6 +109,10 @@ export default {
 						{
 							name: 'GitHub',
 							icon: 'github'
+						},
+						{
+							name: 'Gulp',
+							icon: 'gulp'
 						},
 						{
 							name: 'PHP',
@@ -193,11 +133,81 @@ export default {
 						{
 							name: 'Vue.js/Nuxt',
 							icon: 'vuejs'
+						},
+						{
+							name: 'React',
+							icon: 'react'
 						}
 					],
 					bg: 'Cox Media Group is a media company with a long history of successful newspaper, tv, and radio properties and I work on the rapidly-growing digital presence of the company. In this role I’ve done everything from <strong>site migrations</strong> to <strong>single page apps</strong>, to <strong>WordPress plugin/theme development.</strong> As the dev manager, I balance helping set priorities and projects for my team while actively contributing to the code-base to finish assigned projects of my own.',
 					work: 'You can see our handy-work on sites like: <a href="https://rare.us/" target="_blank">rare.us</a>, <a href="https://rarecountry.com/" target="_blank">rarecountry.com</a>, <a href="https://clarkdeals.com/" target="_blank">clarkdeals.com</a>, and <a href="https://clark.com/" target="_blank">clark.com</a>. I contributed mostly to the front-end of these sites building out template logic and dynamic page features.',
 					plug: 'CMG values every person in the company; it really feels like a family. Working on a small digital innovation team, I’m both inspired by my teammates’ grit and resourcefulness and empowered by the fact that my ideas matter.'
+				},
+				{
+					name: 'Volusion',
+					role: 'Front-End Developer',
+					tags: [
+						{
+							name: 'HTML',
+							icon: 'html5',
+						},
+						{
+							name: 'CSS/SCSS',
+							icon: 'css',
+						},
+						{
+							name: 'JavaScript',
+							icon: 'javascript',
+						},
+						{
+							name: 'Photoshop',
+							icon: 'adobephotoshop',
+						},
+						{
+							name: 'Illustrator',
+							icon: 'adobeillustrator'
+						},
+						{
+							name: 'GitHub',
+							icon: 'github'
+						},
+						{
+							name: 'Gulp',
+							icon: 'gulp'
+						}
+					],
+					bg: 'Volusion is a SASS <strong>e-commerce</strong> platform and Creative Services where I worked was a high volume, fast production agency-type environment. We built custom designed templates and premium themes for Volusion customers using <strong>HTML/CSS/JS.</strong> I worked on a team of 12-15 devs and where we used tools like <strong>Yeoman</strong> and <strong>Grunt/Gulp</strong> to speed up repetitive workflows.',
+					work: 'I worked on countless templates for Volusion Creative Services clients, but I unfortunately did not keep track of those. I did write a blog article about SVGs while I was there. Read that article <a href="https://www.volusion.com/blog/svgs/" target="_blank">here</a>. P.S. Looks like some images are broken :(.',
+					plug: 'Working at Volusion on a team developers was one of the best moves of my career. If you are shopping around for an e-commerce platform, keep in mind that there are some brilliant and talented people working for Volusion.'
+				},
+								{
+					name: 'MedicareMall.com',
+					role: 'Web Designer/Dev',
+					tags: [
+						{
+							name: 'HTML',
+							icon: 'html5',
+						},
+						{
+							name: 'CSS/SCSS',
+							icon: 'css',
+						},
+						{
+							name: 'JavaScript',
+							icon: 'javascript',
+						},
+						{
+							name: 'WordPress',
+							icon: 'wordpress',
+						},
+						{
+							name: 'Photoshop',
+							icon: 'adobephotoshop',
+						}
+					],
+					bg: 'I started as a video editor and ended up learning <span>HTML</span>, <span>CSS</span>, <span>WordPress</span> and began to fiddle with <span>JS/jQuery</span>.',
+					work: 'At the time of writing this, you can still see the template I built for the good folks at this company at <a href="https://www.medicaremall.com/">MedicareMall.com</a>.',
+					plug: 'If ever you’re on the hunt for a Medicare plan, this is the place to go. My parents even recently found plans through MedicareMall.'
 				}
 			]
 		}
@@ -209,11 +219,10 @@ export default {
 @import '~assets/scss/_variables.scss';
 .career {
 	&__section {
-		// border-top: $border-base solid $primary-color;
 		padding: 1em;
-		&--filled {
-			background-color: $gray;
-		}
+	}
+	&__banner {
+		background-color: $gray;
 	}
 	&__text {
 		padding: 1em;
@@ -230,17 +239,19 @@ export default {
 		line-height: 1.4;
 	}
 	@include respond-to(sm-and-up) {
-		&__section-col {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
 		&__img {
 			width: 50%;
 		}
 		&__text {
 			text-align: left;
 			padding: 1em 4em;
+		}
+	}
+	@include respond-to(md-and-up) {
+		&__section--split {
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 	}
 }

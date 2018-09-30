@@ -19,6 +19,8 @@
 							<span>{{item.name}}</span>
 						</li>
 					</ul>
+					<h4 class="project-display__title project-display__title--sm">Role for this project:</h4>
+					<p class="project-display__specs">{{project.specs}}</p>
 					<div class="project-display__btn-wrap">
 						<a class="project-display__cta btn btn--primary" v-bind:href="project.url" v-bind:title="'Link to ' + project.name" target="_blank"><span>Go To Site</span><svg class="icon"><use xlink:href="#exlink"></use></svg></a>
 						<div class="project-display__nav-wrap">
@@ -52,6 +54,8 @@ import netlify from './../../assets/svg/netlify.svg'
 import bitbucket from './../../assets/svg/bitbucket.svg'
 import navnext from './../../assets/svg/navnext.svg'
 import file from './../../assets/svg/file.svg'
+import nodedotjs from './../../assets/svg/nodedotjs.svg'
+import react from './../../assets/svg/react.svg'
 
 import Mockup from '~/components/Mockup.vue'
 export default {
@@ -205,6 +209,9 @@ export default {
 		li {
 			margin-bottom: 1em;
 			display: block;
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 		.icon {
 			width: 2em;
@@ -271,6 +278,9 @@ export default {
 			width: auto;
 		}
 		// border: $border-base solid $secondary-color;
+	}
+	&__specs {
+		margin-bottom: 3em;
 	}
 	@include respond-to(xs-and-up) {
 		&:before {

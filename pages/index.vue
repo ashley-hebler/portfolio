@@ -8,10 +8,10 @@
 			</h2>
 			<app-logo/>
 			<div class="splash__btn-wrap">
-				<nuxt-link to="/career" class="splash__btn btn btn--default">My journey</nuxt-link>
+				<nuxt-link to="/career" class="splash__btn btn btn--default">Career</nuxt-link>
 				<a
 					href="/projects"
-					class="splash__btn btn btn--primary">Show me the code</a>
+					class="splash__btn btn btn--primary">Projects</a>
 			</div>
 		</div>
 </template>
